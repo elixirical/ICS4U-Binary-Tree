@@ -2,18 +2,22 @@ package BinaryTree;
 
 public class MyBinaryTree {
 	
-	StudentInfo root;
+	static StudentInfo root;
 	int numItems = 0;
 	
-	public StudentInfo getRoot() {
+	public static StudentInfo getRoot() {
 		return root;
 	}
 	
-	public void addToTree( StudentInfo itemToAdd, StudentInfo targetRoot ) {
-		if (root == null) {
-			root = itemToAdd;
-		} else if (root != null) {
-			if root.
+	public static void addToTree( StudentInfo itemToAdd, StudentInfo targetRoot ) {
+		if (targetRoot == null) {
+			targetRoot = itemToAdd;
+		} else if (targetRoot != null) {
+			if ( targetRoot.getStudentNumber() < itemToAdd.getStudentNumber() ) {
+				addToTree( itemToAdd, targetRoot.getRight() );
+			} else if ( targetRoot.getStudentNumber() > itemToAdd.getStudentNumber() ) {
+				addToTree( itemToAdd, targetRoot.getLeft() );
+			}
 		}
 	}
 	
