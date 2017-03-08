@@ -1,0 +1,26 @@
+3 classes i StudentInfo ii MyBinaryTree iii TestBinaryTree
+
+i. 	StudentInfo	Constructor must initiate attributes left and right to null
+			Constructor must appear as follows:
+				StudentInfo(wtsN, stringFN, stringLN)
+
+ii.	MyBinaryTree	Two attributes
+				StudentInfo root
+				int numItems
+			Constructor initializes root to null and count to 0
+			Methods
+				StudentInfo getRoot()
+				addToTree( StudentInfo itemToAdd, StudentInfo targetRoute )
+					| no printing from here; recursive
+				getRoute()
+				traverseInorder( StudentInfo targetRoot )   -| recursive; processing a node
+				traversePreorder( StudentInfo targetRoot )  -| means printing out studentNum
+				traversePostorder( StudentInfo targetRoot ) -| first name and last name
+
+iii.	TestBinaryTree	
+		|blablabla
+		|blablabla
+	      addToTree(someStudent,theBinaryTree.getRoute());
+		|
+		|
+	      traverseInorder(theBinaryTree.getRoot());
