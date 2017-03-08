@@ -9,19 +9,23 @@ public class MyBinaryTree {
 		return root;
 	}
 	
-	public void addToTree() {
+	public void addToTree( StudentInfo itemToAdd, StudentInfo targetRoot ) {
+		if (root == null) {
+			root = itemToAdd;
+		} else if (root != null) {
+			if root.
+		}
+	}
+	
+	public void traverseInorder( StudentInfo targetRoot ) {
 		
 	}
 	
-	public void traverseInorder() {
-		
-	}
-	
-	public void traversePreorder() {
+	public void traversePreorder( StudentInfo targetRoot ) {
 		
 	}
 
-	public void traversePostorder() {
+	public void traversePostorder( StudentInfo targetRoot ) {
 	
 	}
 

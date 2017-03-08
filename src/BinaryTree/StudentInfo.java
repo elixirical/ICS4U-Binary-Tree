@@ -9,4 +9,23 @@ public class StudentInfo {
 	String FirstName;
 	String LastName;
 	
+	public int getStudentNumber() {
+		
+	}
+	
+	public int getFirstName() {
+		
+	}
+
+	public int getLastName() {
+	
+	}
+
+	public int getLeft() {
+	
+	}
+	
+	public int getRight() {
+	
+	}
 }

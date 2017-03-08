@@ -10,7 +10,7 @@ ii.	MyBinaryTree	Two attributes
 			Constructor initializes root to null and count to 0
 			Methods
 				StudentInfo getRoot()
-				addToTree( StudentInfo itemToAdd, StudentInfo targetRoute )
+				addToTree( StudentInfo itemToAdd, StudentInfo targetRoot )
 					| no printing from here; recursive
 				traverseInorder( StudentInfo targetRoot )   -| recursive; processing a node
 				traversePreorder( StudentInfo targetRoot )  -| means printing out studentNum
