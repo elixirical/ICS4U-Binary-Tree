@@ -9,6 +9,12 @@ public class StudentInfo {
 	private String firstName;
 	private String lastName;
 	
+	public StudentInfo (int intSN, String strFN, String strLN) {
+		studentNumber = intSN;
+		firstName = strFN;
+		lastName = strLN;
+	}
+	
 	public void setStudent( int number, String fName, String lName) {
 		studentNumber = number;
 		firstName = fName;

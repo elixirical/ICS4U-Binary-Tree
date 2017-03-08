@@ -48,15 +48,33 @@ public class MyBinaryTree {
 	}
 	
 	public void traverseInorder( StudentInfo targetRoot ) {
-		
+		if (targetRoot.getLeft() != null) {
+			traverseInorder(targetRoot.getLeft());
+		} 
+		System.out.println(targetRoot.getStudentNumber());
+		if (targetRoot.getRight() != null) {
+			traverseInorder(targetRoot.getRight());
+		} 
 	}
 	
 	public void traversePreorder( StudentInfo targetRoot ) {
-		
+		System.out.println(targetRoot.getStudentNumber());
+		if (targetRoot.getLeft() != null) {
+			traversePreorder(targetRoot.getLeft());
+		} 
+		if (targetRoot.getRight() != null) {
+			traversePreorder(targetRoot.getRight());
+		} 
 	}
 
 	public void traversePostorder( StudentInfo targetRoot ) {
-	
+		if (targetRoot.getLeft() != null) {
+			traversePostorder(targetRoot.getLeft());
+		} 
+		if (targetRoot.getRight() != null) {
+			traversePostorder(targetRoot.getRight());
+		} 
+		System.out.println(targetRoot.getStudentNumber());
 	}
 
 }
