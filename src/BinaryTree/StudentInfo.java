@@ -15,6 +15,12 @@ public class StudentInfo {
 		lastName = lName;
 	}
 	
+	public void setStudent( StudentInfo arg ) {
+		studentNumber = arg.studentNumber;
+		firstName = arg.firstName;
+		lastName = arg.lastName;
+	}
+	
 	public void setStudentNumber( int arg ) {
 		studentNumber = arg;
 	}
@@ -36,23 +42,23 @@ public class StudentInfo {
 	}
 	
 	public int getStudentNumber() {
-		return studentNumber;
+		return this.studentNumber;
 	}
 	
 	public String getFirstName() {
-		return firstName;
+		return this.firstName;
 	}
 
 	public String getLastName() {
-		return lastName;
+		return this.lastName;
 	}
 
 	public StudentInfo getLeft() {
-		return left;
+		return this.left;
 	}
 	
 	public StudentInfo getRight() {
-		return right;
+		return this.right;
 	}
 	
 }
