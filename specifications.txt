@@ -2,7 +2,7 @@
 
 i. 	StudentInfo	Constructor must initiate attributes left and right to null
 			Constructor must appear as follows:
-				StudentInfo(wtsN, stringFN, stringLN)
+				StudentInfo(intSN, stringFN, stringLN)
 
 ii.	MyBinaryTree	Two attributes
 				StudentInfo root
@@ -12,7 +12,6 @@ ii.	MyBinaryTree	Two attributes
 				StudentInfo getRoot()
 				addToTree( StudentInfo itemToAdd, StudentInfo targetRoute )
 					| no printing from here; recursive
-				getRoute()
 				traverseInorder( StudentInfo targetRoot )   -| recursive; processing a node
 				traversePreorder( StudentInfo targetRoot )  -| means printing out studentNum
 				traversePostorder( StudentInfo targetRoot ) -| first name and last name
@@ -23,4 +22,4 @@ iii.	TestBinaryTree
 	      addToTree(someStudent,theBinaryTree.getRoute());
 		|
 		|
-	      traverseInorder(theBinaryTree.getRoot());
+	      traverseInorder(theBinaryTree.getRoot());	
