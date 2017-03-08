@@ -2,14 +2,14 @@ package BinaryTree;
 
 public class MyBinaryTree {
 	
-	static StudentInfo root;
+	StudentInfo root;
 	int numItems = 0;
 	
-	public static StudentInfo getRoot() {
+	public StudentInfo getRoot() {
 		return root;
 	}
 	
-	public static void addToTree( StudentInfo itemToAdd, StudentInfo targetRoot ) {
+	public void addToTree( StudentInfo itemToAdd, StudentInfo targetRoot ) {
 		if (targetRoot == null) {
 			targetRoot = itemToAdd;
 		} else if (targetRoot != null) {
