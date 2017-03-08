@@ -13,19 +13,19 @@ public class StudentInfo {
 		
 	}
 	
-	public int getFirstName() {
+	public String getFirstName() {
 		
 	}
 
-	public int getLastName() {
+	public String getLastName() {
 	
 	}
 
-	public int getLeft() {
+	public StudentInfo getLeft() {
 	
 	}
 	
-	public int getRight() {
+	public StudentInfo getRight() {
 	
 	}
 }
